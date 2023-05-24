@@ -13,7 +13,7 @@ const OrderPlaced = () => {
 
   const [visible, setVisible] = useState(false);
   const [item, setItem] = useState();
-  const [select, setSelect] = useState("day");
+  const [select, setSelect] = useState("");
 
   const dispatch = useDispatch();
   useEffect(() => {
@@ -46,7 +46,7 @@ const OrderPlaced = () => {
             minWidth={400}
           />
           <View className="flex-row pt-2 ">
-            <Text className="font-norm text-xl"> Total: </Text>
+            <Text className="font-norm text-xl"> Tổng: </Text>
             <Text className="text-xl font-bold text-red-600">
               {allBill?.total}
             </Text>
